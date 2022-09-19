@@ -217,7 +217,7 @@ while True:
             player_busts(player,dealer,chips)
             break
 
-    # if Player hasn't busted, play dealer's hand until dealer reaches 17
+    # if player hasn't busted, play dealer's hand until dealer reaches 17
     if player.value <= 21:
         
         while dealer.value < 17:
@@ -236,7 +236,7 @@ while True:
         elif player.value == dealer.value:
             push(player,dealer)
     
-    # inform Player of their chips total
+    # inform player of their chips total
     print(f'\nYour chip total is now: {chips.total}')
     
     # ask to play again
